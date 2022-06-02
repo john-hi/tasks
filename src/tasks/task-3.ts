@@ -1,4 +1,4 @@
-import { factorial } from "./task-1";
+import { factorial } from "../modules/task1/factorial.function";
 
 
 export function a(n: number, k: number): number {

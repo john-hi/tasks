@@ -1,0 +1,15 @@
+<section class="task">
+    <div class="text">Задача 1</div>
+    <div>
+        <input #nInput />
+        <button (click)="calc(nInput.value)">Ответ</button>
+        <div> {{ result1 }}</div>
+    </div>
+
+    <div class="text">Задача 1</div>
+    <div>
+        <input [(ngModel)]="input" />
+        <button (click)="calcNgModel()">Ответ</button>
+        <div> {{ result2 }}</div>
+    </div>
+</section>
