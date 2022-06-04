@@ -3,9 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { Task4PageComponent } from './task4/task4-page.component';
 
 const routes: Routes = [
-  { path: '',
-  component: Task4PageComponent
-}
+  {
+    path: '',
+    component: Task4PageComponent
+  }
 ];
 
 @NgModule({

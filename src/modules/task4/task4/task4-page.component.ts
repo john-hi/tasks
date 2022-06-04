@@ -8,7 +8,6 @@ import { fibonacci } from '../fib.function';
 })
 export class Task4PageComponent {
   public result: string = '';
-  public input: string = '';
 
   constructor() { }
 

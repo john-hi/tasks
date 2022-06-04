@@ -10,7 +10,6 @@ import { c } from '../c.function';
 export class Task3PageComponent {
   public resultA: string = '';
   public resultC: string = '';
-  public input: string = '';
 
   constructor() { }
 
