@@ -1,15 +1,21 @@
 <section class="task1">
-    <h2 class="title">Задача 1</h2>
+    <div class="title">Задача 1:
+        <p class="title__task">Факториалом числа натурального числа n называется произведение чисел от 1 до n
+            включительно. Факториалом нуля называют единицу. Написать программу нахождения факториала данного числа.
+            Реализовать через рекурсию и без рекурсии. Вывести на экран факториалы от десяти первых чисел.
+        </p>
+    </div>
     <div>
-        <input #nInput />
-        <button (click)="calc(nInput.value)">Ответ</button>
-        <div> {{ result1 }}</div>
+        <div>Решение без рекурсии</div>
+        <input #nInput placeholder="ввести значение"/>
+        <button (click)="calc(nInput.value)">Расчитать</button>
+        <div>Ответ: {{ result1 }}</div>
     </div>
 
-    <div class="text">Задача 1</div>
     <div>
-        <input [(ngModel)]="input" />
-        <button (click)="calcNgModel()">Ответ</button>
-        <div> {{ result2 }}</div>
+        <div>Решение с рекурсией</div>
+        <input [(ngModel)]="input" placeholder="ввести значение"/>
+        <button (click)="calcNgModel()">Расчитать</button>
+        <div>Ответ: {{ result2 }}</div>
     </div>
 </section>

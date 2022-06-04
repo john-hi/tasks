@@ -1,16 +1,26 @@
-<section class="task3">
-    <h2 class="title">Задача 3</h2>
-    <div>
-        <input #nInput placeholder="n"/>
+<section class="task1">
+    <div class="title">Задача 3:
+        <p class="title__task">Число размещений без повторений Akn и число сочетаний без повторений Ckn могут быть
+            найдены соответственно по формулам Akn=n!/(n−k)! и Ckn=n!/k!*(n−k)!. Напишите программу для нахождения данных
+            величин при известных n и k.
+        </p>
     </div>
 
     <div>
-        <input #kInput placeholder="k"/>
-        <button (click)="calcTaks3(nInput.value, kInput.value)">Ответ</button>
-        
+        <input #nInput placeholder="ввести n" />
     </div>
+
     <div>
-         <div>A = {{ resultA }}</div>
-         <div>C = {{ resultC }}</div>
+        <input #kInput placeholder="ввести k" />
+    </div>
+
+    <div>
+        <button (click)="calcTaks3(nInput.value, kInput.value)">Расчитать</button>
+     </div>
+
+    <div class="result">
+        <div>Ответ:</div>
+        <div>A = {{ resultA }}</div>
+        <div>C = {{ resultC }}</div>
     </div>
 </section>

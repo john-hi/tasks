@@ -1,19 +1,25 @@
 <section>
     <header>
-        <h1>Задачи</h1>
-        <p>
-            <a href="http://www.itmathrepetitor.ru/100-zadach-po-programmirovaniyu/" target="_blank">Задачи по прогаммированию с ебучей математикой</a>
-        </p>
+        <h1>Задачи по программированию</h1>
+        <div class="tasks">
+            <a class="tasks__link" href="http://www.itmathrepetitor.ru/100-zadach-po-programmirovaniyu/"
+                target="_blank">
+                посмотреть список задач
+            </a>
+        </div>
     </header>
-    <nav>
-        <!-- <a href="/task1">Задача 1</a> -->
-        <a [routerLink]="['task1']" routerLinkActive="">Задача 1</a>
-        <a [routerLink]="['task3']" routerLinkActive="">Задача 3</a>
-        <a [routerLink]="['task4']" routerLinkActive="">Задача 4</a>
-    </nav>
-    <main>
-        <router-outlet></router-outlet>
-    </main>
 
-    <!-- <app-task1></app-task1> -->
+    <div class="list">
+        <nav class="list__nav">
+            <!-- <a href="/task1">Задача 1</a> -->
+            <a class="list__nav__link" [routerLink]="['task1']" routerLinkActive="">Задача 1</a>
+            <a class="list__nav__link" [routerLink]="['task3']" routerLinkActive="">Задача 3</a>
+            <a class="list__nav__link" [routerLink]="['task4']" routerLinkActive="">Задача 4</a>
+        </nav>
+        <main class="list__page">
+            <router-outlet></router-outlet>
+        </main>
+
+        <!-- <app-task1></app-task1> -->
+    </div>
 </section>
