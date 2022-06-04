@@ -6,7 +6,8 @@ const routes: Routes = [
   {
     path: '',
     component: Task1PageComponent
-  }];
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

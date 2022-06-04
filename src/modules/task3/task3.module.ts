@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { Task3RoutingModule } from './task3-routing.module';
-import { Task3Component } from './task3.component';
+import { Task3PageComponent } from './task3-page/task3-page.component';
 
 
 @NgModule({
   declarations: [
-    Task3Component
+    Task3PageComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,16 @@
+<section class="task3">
+    <h2 class="title">Задача 3</h2>
+    <div>
+        <input #nInput placeholder="n"/>
+    </div>
+
+    <div>
+        <input #kInput placeholder="k"/>
+        <button (click)="calcTaks3(nInput.value, kInput.value)">Ответ</button>
+        
+    </div>
+    <div>
+         <div>A = {{ resultA }}</div>
+         <div>C = {{ resultC }}</div>
+    </div>
+</section>
