@@ -12,7 +12,12 @@ const routes: Routes = [
   },
   {
     path: 'task4',
-    loadChildren: () => import('../modules/task4/task4.module').then(m => m.Task4Module) }
+    loadChildren: () => import('../modules/task4/task4.module').then(m => m.Task4Module) 
+  },
+  {
+    path: 'task5',
+    loadChildren: () => import('../modules/task5/task5.module').then(m => m.Task5Module) 
+  }
 ];
 
 @NgModule({

@@ -1,0 +1,17 @@
+<section class="task1">
+    <div class="title">Задача 5:
+        <p class="title__task">Найти приблизительное значения чисел e и π с помощью формул e = 1+1/1!+1/2!+1/3!+... и
+            π/4 = 1−1/3+1/5−1/7+1/9−...
+        </p>
+    </div>
+    <div>
+        <input #nInput placeholder="ввести n" />
+        <button (click)="calculateE(nInput.value)">Расчитать</button>
+        <div>Ответ: e = {{ e }}</div>
+    </div>
+    <div>
+        <input #pInput placeholder="ввести n" />
+        <button (click)="calculatePi(pInput.value)">Расчитать</button>
+        <div>Ответ: π = {{ pi }}</div>
+    </div>
+</section>
