@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { cube } from '../cube.function';
 import { sqr } from '../sqr.function';
 
 @Component({
@@ -9,6 +10,7 @@ import { sqr } from '../sqr.function';
 export class Task6PageComponent{
   public sqr: string = '';
   public array: number[] = [];
+  public cube: string = '';
 
   constructor() {}
 
@@ -23,5 +25,11 @@ export class Task6PageComponent{
 
   public sqrBack(n: number): number {
     return sqr(n);
+  }
+
+
+  public cubeSum(str: string): void {
+    let n: number = Number.parseInt(str, 10);
+    this.cube = cube(n).toString();
   }
 }

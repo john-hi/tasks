@@ -5,7 +5,7 @@
         </p>
     </div>
     <div>
-        <input #nInput placeholder="ввести n"/>
+        <input #nInput placeholder="ввести n" />
         <button (click)="calcSqr(nInput.value)">Расчитать</button>
         <div>Ответ: {{ sqr }}</div>
         <table>
@@ -18,5 +18,11 @@
                 <td>{{ sqrBack(i) }}</td>
             </tr>
         </table>
+    </div>
+
+    <div>
+        <input #cInput placeholder="ввести n" />
+        <button (click)="cubeSum(cInput.value)">Расчитать</button>
+        <div>Ответ: {{ cube }}</div>
     </div>
 </section>
