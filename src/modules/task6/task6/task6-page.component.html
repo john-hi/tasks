@@ -4,25 +4,40 @@
             сумме n первых нечетных чисел. Составить таблицу квадратов натуральных чисел от 1 до 10000.
         </p>
     </div>
-    <div>
-        <input #nInput placeholder="ввести n" />
-        <button (click)="calcSqr(nInput.value)">Расчитать</button>
-        <div>Ответ: {{ sqr }}</div>
-        <table>
-            <tr>
-                <th>i</th>
-                <th>sqr(i)</th>
-            </tr>
-            <tr *ngFor="let i of array">
-                <td>{{ i }}</td>
-                <td>{{ sqrBack(i) }}</td>
-            </tr>
-        </table>
-    </div>
+    <div class="results">
+        <div>
+            <div>Расчет квадрата</div>
+            <input #nInput placeholder="ввести n" />
+            <button (click)="calcSqr(nInput.value)">Расчитать</button>
+            <div>Ответ: {{ sqr }}</div>
+            <table>
+                <tr>
+                    <th>i</th>
+                    <th>sqr(i)</th>
+                </tr>
+                <tr *ngFor="let i of array">
+                    <td>{{ i }}</td>
+                    <td>{{ sqrBack(i) }}</td>
+                </tr>
+            </table>
+        </div>
 
-    <div>
-        <input #cInput placeholder="ввести n" />
-        <button (click)="cubeSum(cInput.value)">Расчитать</button>
-        <div>Ответ: {{ cube }}</div>
+        <div>
+            <div>Расчет куба</div>
+            <input #cInput placeholder="ввести n" />
+            <button (click)="cubeSum(cInput.value)">Расчитать</button>
+            <div>Ответ: {{ cube }}</div>
+
+            <table>
+                <tr>
+                    <th>i</th>
+                    <th>cube(i)</th>
+                </tr>
+                <tr *ngFor="let i of arrayCube">
+                    <td>{{ i }}</td>
+                    <td>{{ cubeBack(i) }}</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </section>

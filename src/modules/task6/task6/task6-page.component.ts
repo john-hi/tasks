@@ -11,6 +11,7 @@ export class Task6PageComponent{
   public sqr: string = '';
   public array: number[] = [];
   public cube: string = '';
+  public arrayCube: number[] = [];
 
   constructor() {}
 
@@ -31,5 +32,13 @@ export class Task6PageComponent{
   public cubeSum(str: string): void {
     let n: number = Number.parseInt(str, 10);
     this.cube = cube(n).toString();
+    this.arrayCube = [];
+    for (let i = 1; i <= n; i++) {
+      this.arrayCube.push(i);
+    }
+  }
+
+  public cubeBack(n: number): number {
+    return cube(n);
   }
 }

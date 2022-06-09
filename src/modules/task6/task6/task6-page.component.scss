@@ -9,8 +9,18 @@
     font-weight: bold;
 }
 
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
 td, th {
     width: 50px;
     border: 1px solid black;
     text-align: center;
+}
+
+.results {
+    display: flex;
+    gap: 50px;
 }
