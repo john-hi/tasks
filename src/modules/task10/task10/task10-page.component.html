@@ -1,0 +1,21 @@
+<section class="task1">
+    <div class="title">Задача 6:
+        <p class="title__task">Арифметический квадрат. Заполнить квадратную матрицу n x n так, чтобы все числа первого
+            столбца и первой строки равны 1, а каждое из оставшихся чисел равно сумме верхнего и левого соседей. Вывести
+            на экран матрицу данного размера.
+        </p>
+    </div>
+
+    <div class="results">
+        <div>
+            <div>Расчет арифметического квадрата</div>
+            <input #nInput placeholder="ввести n" />
+            <button (click)="createMatrix(nInput.value)">Расчитать</button>
+            <table>
+                <tr *ngFor="let row of matrix">
+                    <td *ngFor="let cell of row">{{ cell }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
