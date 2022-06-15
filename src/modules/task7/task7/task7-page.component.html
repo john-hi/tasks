@@ -1,0 +1,19 @@
+<section class="task1">
+    <div class="title">Задача 6:
+        <p class="title__task">Ввести число n и заполнить двумерный массив размером n * n числами 1, 2, ... по спирали.
+        </p>
+    </div>
+
+    <div class="results">
+        <div>
+            <div>Расчет арифметического квадрата</div>
+            <input #nInput placeholder="ввести n" />
+            <button (click)="createHelix(nInput.value)">Расчитать</button>
+            <table>
+                <tr *ngFor="let row of helix">
+                    <td *ngFor="let cell of row">{{ cell }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
