@@ -8,15 +8,10 @@ import { Component } from '@angular/core';
 export class Task10PageComponent {
   public matrix: number[][] = [];
 
-
-  constructor() { }
-
-
   public createMatrix(str: string): void {
     const n: number = Number.parseInt(str, 10);
     this.matrix = this.getMatrix(n);
   }
-
 
   private getMatrix(n: number): number[][] {
     const result: number[][] = [];

@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
 import { Task10RoutingModule } from './task10-routing.module';
 import { Task10PageComponent } from './task10/task10-page.component';
