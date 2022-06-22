@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { Task1RoutingModule } from './task1-routing.module';
-import { Task1PageComponent } from './task1-page/task1-page.component';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+
+import { Task1PageComponent } from './task1-page/task1-page.component';
+import { Task1RoutingModule } from './task1-routing.module';
 
 
 @NgModule({

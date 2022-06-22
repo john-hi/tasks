@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { a } from '../a.function';
 import { c } from '../c.function';
 
@@ -8,10 +9,8 @@ import { c } from '../c.function';
   styleUrls: ['./task3-page.component.scss']
 })
 export class Task3PageComponent {
-  public resultA: string = '';
-  public resultC: string = '';
-
-  constructor() { }
+  public resultA = '';
+  public resultC = '';
 
   public calcTaks3(nStr: string, kStr: string): void {
     const n: number = Number.parseInt(nStr, 10);

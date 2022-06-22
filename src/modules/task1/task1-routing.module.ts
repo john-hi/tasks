@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { Task1PageComponent } from './task1-page/task1-page.component';
 
 const routes: Routes = [

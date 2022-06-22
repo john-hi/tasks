@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unassigned-import, import/order */
 // This file is required by karma.conf.js and loads recursively all the .spec and framework files
 
 import 'zone.js/testing';
@@ -17,7 +18,7 @@ declare const require: {
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(
   BrowserDynamicTestingModule,
-  platformBrowserDynamicTesting(),
+  platformBrowserDynamicTesting()
 );
 
 // Then we find all the tests.

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { fibonacci } from '../fib.function';
+
 import { FibService } from '../fib.service';
 
 @Component({
@@ -8,9 +8,8 @@ import { FibService } from '../fib.service';
   styleUrls: ['./task4-page.component.scss']
 })
 export class Task4PageComponent {
-  public result: string = '';
-  private _fibService: FibService;
-
+  public result = '';
+  private readonly _fibService: FibService;
 
 
   constructor(fibService: FibService) {
@@ -23,8 +22,9 @@ export class Task4PageComponent {
   // }     аналог, только с краткой записью "инверсия контроля IoC" и "внедрение зависимостей DI"
 
   public fib(str: string): void {
-    let n: number = Number.parseInt(str, 10);
-    let sum: number = this._fibService.memFibonacci(n);
+    const n: number = Number.parseInt(str, 10);
+    const sum: number = this._fibService.memFibonacci(n);
     this.result = sum.toString();
   }
+
 }

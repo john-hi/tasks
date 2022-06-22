@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { cube } from '../cube.function';
 import { sqr } from '../sqr.function';
 
@@ -7,19 +8,17 @@ import { sqr } from '../sqr.function';
   templateUrl: './task6-page.component.html',
   styleUrls: ['./task6-page.component.scss']
 })
-export class Task6PageComponent{
-  public sqr: string = '';
+export class Task6PageComponent {
+  public sqr = '';
   public array: number[] = [];
-  public cube: string = '';
+  public cube = '';
   public arrayCube: number[] = [];
 
-  constructor() {}
-
   public calcSqr(str: string): void {
-    let n: number = Number.parseInt(str, 10);
+    const n: number = Number.parseInt(str, 10);
     this.sqr = sqr(n).toString();
     this.array = [];
-    for(let i = 1; i <= n; i++) {
+    for (let i = 1; i <= n; i += 1) {
       this.array.push(i);
     }
   }
@@ -30,10 +29,10 @@ export class Task6PageComponent{
 
 
   public cubeSum(str: string): void {
-    let n: number = Number.parseInt(str, 10);
+    const n: number = Number.parseInt(str, 10);
     this.cube = cube(n).toString();
     this.arrayCube = [];
-    for (let i = 1; i <= n; i++) {
+    for (let i = 1; i <= n; i += 1) {
       this.arrayCube.push(i);
     }
   }
@@ -41,4 +40,5 @@ export class Task6PageComponent{
   public cubeBack(n: number): number {
     return cube(n);
   }
+
 }
